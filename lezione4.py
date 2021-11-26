@@ -1,6 +1,6 @@
 class CSVfile():
   def __init__(self, file_name):
-    self.name = file_name
+    self.name=file_name
 
   def get_data(self):
     file_list = []
@@ -13,7 +13,7 @@ class CSVfile():
         file_list.append(lineElements)
     return file_list
 
-shampooFile = CSVFile('shampoo_sales.csv')
+shampooFile = CSVfile('shampoo_sales.csv')
 shampooList = shampooFile.get_data()
 
 for line in shampooList:
